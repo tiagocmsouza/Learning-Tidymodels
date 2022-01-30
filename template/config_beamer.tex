@@ -1,0 +1,105 @@
+
+\usetheme{Warsaw}
+\usecolortheme{seagull}
+\usefonttheme{structurebold}
+\setbeamercovered{transparent=0}
+
+\definecolor{oxford_blue}{RGB}{3,7,57}
+\definecolor{teal_blue}{RGB}{69,124,144}
+\definecolor{ochre}{RGB}{195,115,29}
+\definecolor{yellow_orange}{RGB}{255,145,10}
+\definecolor{sonic_silver}{RGB}{120,120,120}
+\definecolor{caribbean_green}{RGB}{9,217,161}
+\definecolor{cardinal}{RGB}{208,17,55}
+\definecolor{indigo_dye}{RGB}{20,61,82}
+
+\setbeamercolor{section in head/foot}{fg=white,bg=oxford_blue}
+\setbeamercolor{subsection in head/foot}{fg=oxford_blue,bg=white}
+\setbeamercolor{frametitle}{fg=oxford_blue,bg=white}
+
+\pgfdeclarehorizontalshading{beamer@frametitleshade}{\paperheight}{
+   color(0pt)=(white);
+   color(\paperwidth)=(white)
+}
+
+% \makeatletter
+% 
+% \newbox\@backgroundblock
+% \newenvironment{backgroundblock}[2]{%
+%   \global\setbox\@backgroundblock=\vbox\bgroup%
+%     \unvbox\@backgroundblock%
+%     \vbox to0pt\bgroup\vskip#2\hbox to0pt\bgroup\hskip#1\relax%
+% }{\egroup\egroup\egroup}
+% \addtobeamertemplate{background}{\box\@backgroundblock}{}
+% 
+% \setbeamertemplate{frametitle}
+% {%
+%     \nointerlineskip%
+%     \vskip-2.8pt%
+%     \hbox{\leavevmode
+%         \advance\beamer@leftmargin by -12bp%
+%         \advance\beamer@rightmargin by -12bp%
+%         \beamer@tempdim=\textwidth%
+%         \advance\beamer@tempdim by \beamer@leftmargin%
+%         \advance\beamer@tempdim by \beamer@rightmargin%
+%         \hskip-\Gm@lmargin\hbox{%
+%             \setbox\beamer@tempbox=\hbox{\begin{minipage}[b]{\paperwidth}%
+%                     \vbox{}\vskip.2ex%
+%                     \leftskip0.6cm%
+%                     %\rightskip0.3cm plus1fil\leavevmode
+%                     \insertframetitle%
+%                     \ifx\insertframesubtitle\@empty%
+%                     \hfill
+%                     %\raisebox{-1.5mm}{\includegraphics[width=3.0em, height=1.5em]{template/figure.png}}
+%                     %\strut\par%
+%                     %\else
+%                     \par{\usebeamerfont*{framesubtitle}{\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}\strut\par}%
+%                     \fi%
+%                     %\nointerlineskip
+%                     %\vbox{}%
+%             \end{minipage}}%
+%             \beamer@tempdim=\ht\beamer@tempbox%
+%             \advance\beamer@tempdim by 2pt%
+%             \begin{pgfpicture}{0pt}{0pt}{\paperwidth}{\beamer@tempdim}
+%                 \usebeamercolor{frametitle right}
+%             \end{pgfpicture}
+%             \hskip-\paperwidth%
+%             \box\beamer@tempbox%
+%         }%
+%     }%
+%     
+%     
+%     %\begin{backgroundblock}{-1.6mm}{16mm}
+%     %\includegraphics[width=\paperwidth, %height=\paperheight]{template/element2.png}
+%     %\end{backgroundblock}
+% }
+% 
+% \defbeamertemplate*{title page}{customized}[1][]
+% {
+%    
+%   %\begin{backgroundblock}{20mm}{-30mm}
+%   %  \includegraphics[width=\paperwidth, height=0.6\paperheight]{template/element3.png}
+%   %\end{backgroundblock}
+%   %\begin{backgroundblock}{5mm}{35mm}
+%   %  \includegraphics[width=0.96\paperwidth, height=0.66\paperheight]{template/element1.png}
+%   %\end{backgroundblock}
+%   
+%   \vspace*{2.0cm}\hspace*{0.0cm}\begin{minipage}{\textwidth}
+%       \center
+%       \usebeamerfont{title}\textcolor{oxford_blue}\inserttitle\par
+%       \usebeamerfont{subtitle}\textcolor{teal_blue}\insertsubtitle\par
+%       \bigskip\bigskip
+%       \large\usebeamerfont{author}\textcolor{black}\insertauthor\par
+%       \bigskip
+%       \normalsize\usebeamerfont{institute}\textcolor{black}\insertinstitute\par
+%       \normalsize\usebeamerfont{date}\textcolor{black}\insertdate\par
+%     \end{minipage}
+%   
+%   %\begin{backgroundblock}{92mm}{77mm}
+%   %\includegraphics[scale=0.13]{template/figure.png}
+%   %\end{backgroundblock}
+% 
+% }
+% 
+% \makeatother
+
